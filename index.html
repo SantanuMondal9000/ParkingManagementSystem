@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Parking Management</title>
+</head>
+
+<body>
+  <section class="parking-management-block">
+    <div class="conatiner">
+      <div class="parking-section-area">
+        <!-- For Parking Enter area -->
+        <div class="parking-enter">
+          <h2>Parking Enter</h2>
+          <form id="entryForm">
+            <label>Vehicle Number:</label>
+            <input type="text" name="entry-vehicle-number" required placeholder="Vehicle Number">
+            <label>Vehicle Type:</label>
+            <select name="vehicle_type" required>
+              <option value="2wheeler">2 Wheeler</option>
+              <option value="4wheeler">4 Wheeler</option>
+            </select>
+            <button type="submit">Add Entry</button>
+          </form>
+          <p class="status" id="parking-status"></p>
+        </div>
+        <!-- For Ticket Park Release area -->
+        <div class="release-area">
+          <h2>Release Car</h2>
+          <form id="release-form">
+            <label>Vehicle Number:</label>
+            <input type="text" name="release-vehicle-number" id="release-form" required placeholder="Vehicle Number">
+            <label>Vehicle Type:</label>
+            <select name="vehicle_type" required>
+              <option value="2wheeler">2 Wheeler</option>
+              <option value="4wheeler">4 Wheeler</option>
+            </select>
+            <button type="submit">Release</button>
+          </form>
+          <p class="status" id="release-status"></p>
+        </div>
+        <!-- For ticket avilable area -->
+        <div class="avilablle-area">
+          <h2>Avilable</h2>
+          <div class="two-wheeler">
+            <p>2 Wheeler:</p>
+            <p class="two-wheeler-status" id="two-wheeler-status">100</p>
+          </div>
+          <div class="four-wheeler">
+            <p>4 Wheeler:</p>
+            <p class="four-wheeler-status" id="four-wheeler-status">100</p>
+          </div>
+          <p class="status"></p>
+        </div>
+      </div>
+    </div>
+    <!-- For Ticket area -->
+    <div class="ticket-area">
+      <h2>Ticket Area</h2>
+      <div class="ticket-table-area">
+        <table class="ticket-table" id="ticket-table">
+          <tr>
+            <th>Sl No.</th>
+            <th>Vehicle Number</th>
+            <th>Vehicle Type</th>
+            <th>Slot Number</th>
+            <th>Entry Time </th>
+            <th>Exit Time</th>
+            <th>Status</th>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </section>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="js/index.js"></script>
+
+</html>
