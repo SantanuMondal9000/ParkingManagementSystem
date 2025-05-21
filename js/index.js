@@ -52,7 +52,6 @@ $(document).ready(function () {
 
   //Get the tickets.
   getTickets()
-
 });
 
 //Get the empty slots avilable.
