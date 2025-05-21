@@ -1,0 +1,17 @@
+{
+    "name": "santanu-mondal/parking-management-system",
+    "autoload": {
+        "psr-4": {
+            "SantanuMondal\\ParkingManagementSystem\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "santanumondal9000",
+            "email": "santanu.mondal@innoraft.com"
+        }
+    ],
+    "require": {
+        "vlucas/phpdotenv": "^5.6"
+    }
+}
